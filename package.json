@@ -1,0 +1,27 @@
+{
+  "name": "shikake",
+  "version": "1.0.0",
+  "description": "世の中の仕掛を可視化する方法を提案します",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazumatu981/shikake.git"
+  },
+  "author": "kazumatu981",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazumatu981/shikake/issues"
+  },
+  "homepage": "https://github.com/kazumatu981/shikake#readme",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.23",
+    "@vuepress/theme-default": "^2.0.0-rc.110",
+    "sass-embedded": "^1.89.2",
+    "vuepress": "^2.0.0-rc.23"
+  }
+}
