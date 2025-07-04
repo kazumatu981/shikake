@@ -1,0 +1,119 @@
+@use 'sass:color' as color;
+
+// テーマカラー
+$shikakeThemeColor: #1b7598; // Bateau Blue
+
+// 黒と白とグレー
+$shikakeBlack: color.mix(#000000, $shikakeThemeColor, 95%);
+$shikakeWhite: color.mix(#ffffff, $shikakeThemeColor, 95%);
+$shikakeGray: color.mix(#8a8a8a, $shikakeThemeColor, 95%);
+
+// 三原色＋黄色
+$shikakeRed: color.mix(#ff0000, $shikakeThemeColor, 30%);
+$shikakeGreen: color.mix(#00ff00, $shikakeThemeColor, 30%);
+$shikakeBlue: color.mix(#0000ff, $shikakeThemeColor, 30%);
+$shikakeYellow: color.mix(#ffff00, $shikakeThemeColor, 30%);
+
+// 色の調整率
+$colorRates: 10, 20, 30, 40, 50, 60, 70, 80, 90;
+// 色名称定義
+$colorNames: 'gray', 'theme-color', 'red', 'green', 'blue', 'yellow';
+
+:root {
+    --shikake-black: #{color.adjust($shikakeBlack)};
+    --shikake-black-soft: #{color.mix($shikakeBlack, $shikakeGray, 85%)};
+    --shikake-black-x-soft: #{color.mix($shikakeBlack, $shikakeGray, 90%)};
+    --shikake-black-xx-soft: #{color.mix($shikakeBlack, $shikakeGray, 95%)};
+    --shikake-white: #{color.adjust($shikakeWhite)};
+    --shikake-white-soft: #{color.mix($shikakeWhite, $shikakeGray, 70%)};
+    --shikake-white-x-soft: #{color.mix($shikakeWhite, $shikakeGray, 80%)};
+    --shikake-white-xx-soft: #{color.mix($shikakeWhite, $shikakeGray, 90%)};
+
+    // グレースケール
+    --shikake-gray: #{color.adjust($shikakeGray)};
+    @each $rate in $colorRates {
+        --shikake-dark-gray-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeGray,
+                $rate * 1%
+            )};
+        --shikake-light-gray-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeGray,
+                $rate * 1%
+            )};
+    }
+
+    // テーマカラー
+    --shikake-theme-color: #{color.adjust($shikakeThemeColor)};
+    @each $rate in $colorRates {
+        --shikake-dark-theme-color-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeThemeColor,
+                $rate * 1%
+            )};
+        --shikake-light-theme-color-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeThemeColor,
+                $rate * 1%
+            )};
+    }
+
+    // 赤
+    --shikake-red: #{color.adjust($shikakeRed)};
+    @each $rate in $colorRates {
+        --shikake-dark-red-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeRed,
+                $rate * 1%
+            )};
+        --shikake-light-red-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeRed,
+                $rate * 1%
+            )};
+    }
+
+    // 緑
+    --shikake-green: #{color.adjust($shikakeGreen)};
+    @each $rate in $colorRates {
+        --shikake-dark-green-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeGreen,
+                $rate * 1%
+            )};
+        --shikake-light-green-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeGreen,
+                $rate * 1%
+            )};
+    }
+    // 青
+    --shikake-blue: #{color.adjust($shikakeBlue)};
+    @each $rate in $colorRates {
+        --shikake-dark-blue-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeBlue,
+                $rate * 1%
+            )};
+        --shikake-light-blue-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeBlue,
+                $rate * 1%
+            )};
+    }
+    // 黄
+    --shikake-yellow: #{color.adjust($shikakeYellow)};
+    @each $rate in $colorRates {
+        --shikake-dark-yellow-#{$rate}: #{color.mix(
+                $shikakeBlack,
+                $shikakeYellow,
+                $rate * 1%
+            )};
+        --shikake-light-yellow-#{$rate}: #{color.mix(
+                $shikakeWhite,
+                $shikakeYellow,
+                $rate * 1%
+            )};
+    }
+}
