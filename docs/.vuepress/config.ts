@@ -14,6 +14,14 @@ export default defineUserConfig({
     title: 'しかけ',
     description: '世の中の仕掛けを図に表現するためのツール',
     head: [
+        // font-awesome
+        [
+            'script',
+            {
+                src: 'https://kit.fontawesome.com/df9e5b1dd2.js',
+                crossorigin: 'anonymous',
+            },
+        ],
         ['link', { rel: 'icon', href: '/shikake/favicon.ico' }],
         [
             'meta',
