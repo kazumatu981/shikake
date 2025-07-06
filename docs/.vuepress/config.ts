@@ -1,6 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite';
 import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
+import MarkdownItMdc from 'markdown-it-mdc';
 
 export default defineUserConfig({
     // Site configuration
@@ -74,4 +75,8 @@ export default defineUserConfig({
         '!docs/.vuepress',
         '!docs/.vuepress/**/*',
     ],
+    // Markdown configuration
+    extendsMarkdown: (md) => {
+        md.use(MarkdownItMdc);
+    },
 });
