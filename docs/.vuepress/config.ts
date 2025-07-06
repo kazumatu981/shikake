@@ -43,6 +43,12 @@ export default defineUserConfig({
                     {
                         text: 'どう使われるかを書く',
                         link: '/2.howto/usecase/',
+                        children: [
+                            {
+                                text: 'ユースケース図の文法',
+                                link: '/2.howto/usecase/semmantics.html',
+                            },
+                        ],
                     },
                     {
                         text: 'システムのカタチを書く',
