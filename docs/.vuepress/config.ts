@@ -46,7 +46,7 @@ export default defineUserConfig({
                         children: [
                             {
                                 text: 'ユースケース図の文法',
-                                link: '/2.howto/usecase/semmantics.html',
+                                link: '/2.howto/usecase/semantics.html',
                             },
                         ],
                     },
