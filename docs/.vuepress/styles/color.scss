@@ -14,17 +14,20 @@ $shikakeBlack: color.mix(#000000, $shikakeThemeColor, 95%);
 $shikakeWhite: color.mix(#ffffff, $shikakeThemeColor, 95%);
 $shikakeGray: color.mix(#8a8a8a, $shikakeThemeColor, 95%);
 
-// 三原色＋黄色
+// 基本色
 $themeDependencyRate: 47%;
 $shikakeRed: color.mix(#ff0000, $shikakeThemeColor, $themeDependencyRate);
 $shikakeGreen: color.mix(#00ff00, $shikakeThemeColor, $themeDependencyRate);
 $shikakeBlue: color.mix(#0000ff, $shikakeThemeColor, $themeDependencyRate);
 $shikakeYellow: color.mix(#ffff00, $shikakeThemeColor, $themeDependencyRate);
+$shikakePurple: color.mix(#ff00ff, $shikakeThemeColor, $themeDependencyRate);
+$shikakeCyan: color.mix(#00ffff, $shikakeThemeColor, $themeDependencyRate);
 
 // 色の調整率
 $colorRates: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
 // 色名称定義
-$colorNames: 'gray', 'theme-color', 'red', 'green', 'blue', 'yellow';
+$colorNames: 'gray', 'theme-color', 'red', 'green', 'blue', 'yellow', 'purple',
+    'cyan';
 
 :root {
     // グレースケール
@@ -119,6 +122,34 @@ $colorNames: 'gray', 'theme-color', 'red', 'green', 'blue', 'yellow';
             )};
         --shikake-light-yellow-#{$rate}: #{color.mix(
                 $shikakeYellow,
+                $shikakeWhite,
+                $rate * 1%
+            )};
+    }
+    // 紫
+    --shikake-purple: #{color.adjust($shikakePurple)};
+    @each $rate in $colorRates {
+        --shikake-dark-purple-#{$rate}: #{color.mix(
+                $shikakePurple,
+                $shikakeBlack,
+                $rate * 1%
+            )};
+        --shikake-light-purple-#{$rate}: #{color.mix(
+                $shikakePurple,
+                $shikakeWhite,
+                $rate * 1%
+            )};
+    }
+    // シアン
+    --shikake-cyan: #{color.adjust($shikakeCyan)};
+    @each $rate in $colorRates {
+        --shikake-dark-cyan-#{$rate}: #{color.mix(
+                $shikakeCyan,
+                $shikakeBlack,
+                $rate * 1%
+            )};
+        --shikake-light-cyan-#{$rate}: #{color.mix(
+                $shikakeCyan,
                 $shikakeWhite,
                 $rate * 1%
             )};
