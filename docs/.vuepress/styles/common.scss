@@ -18,6 +18,9 @@
         .#{$colorName}-text-#{$rate} {
             color: var(--shikake-dark-#{$colorName}-#{$rate});
         }
+        .#{$colorName}-bg-#{$rate} {
+            background-color: var(--shikake-light-#{$colorName}-#{$rate});
+        }
         .#{$colorName}-text-bold-#{$rate} {
             font-weight: bold;
             color: var(--shikake-dark-#{$colorName}-#{$rate});
@@ -49,6 +52,9 @@
         @each $rate in $colorRates {
             .#{$colorName}-text-#{$rate} {
                 color: var(--shikake-light-#{$colorName}-#{$rate});
+            }
+            .#{$colorName}-bg-#{$rate} {
+                background-color: var(--shikake-dark-#{$colorName}-#{$rate});
             }
             .#{$colorName}-text-bold-#{$rate} {
                 font-weight: bold;
