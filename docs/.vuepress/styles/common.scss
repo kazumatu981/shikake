@@ -2,27 +2,67 @@
 
 @each $colorName in $colorNames {
     .#{$colorName}-text {
-        color: var(--shikake-dark-#{$colorName}-50);
+        color: var(--shikake-#{$colorName});
     }
     .#{$colorName}-text-bold {
-        color: var(--shikake-dark-#{$colorName}-50);
+        font-weight: bold;
+        color: var(--shikake-dark-#{$colorName}-70);
     }
     .#{$colorName}-text-emphasis {
         font-weight: bold;
-        color: var(--shikake-dark-#{$colorName}-50);
-        background-color: var(--shikake-light-#{$colorName}-80);
+        color: var(--shikake-dark-#{$colorName}-70);
+        background-color: var(--shikake-light-#{$colorName}-30);
+    }
+
+    @each $rate in $colorRates {
+        .#{$colorName}-text-#{$rate} {
+            color: var(--shikake-dark-#{$colorName}-#{$rate});
+        }
+        .#{$colorName}-text-bold-#{$rate} {
+            font-weight: bold;
+            color: var(--shikake-dark-#{$colorName}-#{$rate});
+        }
+    }
+
+    .soft-text {
+        color: var(--shikake-black-soft);
+    }
+    .x-soft-text {
+        color: var(--shikake-black-x-soft);
+    }
+    .xx-soft-text {
+        color: var(--shikake-black-xx-soft);
     }
     [data-theme='dark'] {
         .#{$colorName}-text {
-            color: var(--shikake-light-#{$colorName}-50);
+            color: var(--shikake-#{$colorName});
         }
         .#{$colorName}-text-bold {
-            color: var(--shikake-light-#{$colorName}-50);
+            font-weight: bold;
+            color: var(--shikake-light-#{$colorName}-70);
         }
         .#{$colorName}-text-emphasis {
             font-weight: bold;
-            color: var(--shikake-light-#{$colorName}-50);
-            background-color: var(--shikake-dark-#{$colorName}-70);
+            color: var(--shikake-light-#{$colorName}-70);
+            background-color: var(--shikake-dark-#{$colorName}-30);
+        }
+        @each $rate in $colorRates {
+            .#{$colorName}-text-#{$rate} {
+                color: var(--shikake-light-#{$colorName}-#{$rate});
+            }
+            .#{$colorName}-text-bold-#{$rate} {
+                font-weight: bold;
+                color: var(--shikake-light-#{$colorName}-#{$rate});
+            }
+        }
+        .soft-text {
+            color: var(--shikake-white-soft);
+        }
+        .x-soft-text {
+            color: var(--shikake-white-x-soft);
+        }
+        .xx-soft-text {
+            color: var(--shikake-white-xx-soft);
         }
     }
 }
