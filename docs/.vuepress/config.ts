@@ -40,6 +40,12 @@ export default defineUserConfig({
     },
     // Theme configuration
     theme: defaultTheme({
+        navbar: [
+            {
+                text: 'test',
+                link: '/99.tests/',
+            },
+        ],
         sidebar: [
             {
                 text: 'home',
