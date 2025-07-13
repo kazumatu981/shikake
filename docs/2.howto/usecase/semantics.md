@@ -20,14 +20,53 @@ UMLの規則を最優先する場合は、
 | ユースケース | アクターが何をするかを動詞で記述します |
 | ストレージ   | ユースケースの目的語になる要素です     |
 
-
 ### アクター
 
 ![actor](./img/semantics_element_actor.drawio.svg)
 
+アクターはシステムの登場人物です。
+棒人間で表し下に「役名」を記述します。
+もともとアクター(actor)は「俳優」という意味があります。
+その登場人物がシステム上どういう「役」を演じるかという視点で設定してください。
+アクターは可能な限り具体的な役割を与えるようにしましょう。
+
+* <i class="fa-solid fa-face-smile blue-text"></i> よい例
+    * お買い物をする人
+    * 商品を選ぶ人
+    * 在庫の台帳を確認する人
+* <i class="fa-solid fa-face-dizzy yellow-text"></i> よくない例
+    * 利用者
+    * ユーザ
+    * 管理者
+
+::container
+---
+icon: fa-solid fa-circle-exclamation
+title: 注意
+color: red
+---
+
+実世界でひとりでもアクターが二つになる場合があります。
+例えば、コンビニエンスストアの店員は、「レジを打ち係」と「品出し係」のふたつのアクターに割り当てるのが自然です。
+
+::
+
 ### ユースケース
 
 ![useCase](./img/semantics_element_usecase.drawio.svg)
+
+::container
+---
+icon: fa-solid fa-thumbs-up
+title: ヒント
+color: green
+---
+
+システムエンジニアは、ユースケースより機能(フィーチャー)を割り当てがちです。
+いかに「機能」の例を挙げます。このようなユーケースを割り当てないでください。
+
+::
+
 
 ### ストレージ
 
