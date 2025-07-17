@@ -2,6 +2,7 @@ import { viteBundler } from '@vuepress/bundler-vite';
 import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
 import MarkdownItMdc from 'markdown-it-mdc';
+import MarkdownItFontawesome from '@kazumatu981/markdown-it-fontawesome';
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { getDirname, path } from 'vuepress/utils';
 
@@ -102,6 +103,13 @@ export default defineUserConfig({
     // Markdown configuration
     extendsMarkdown: (md) => {
         md.use(MarkdownItMdc);
+        md.use(MarkdownItFontawesome.plugin, {
+            ignoreStyled: false,
+            simpleFaTagStart: '%',
+            simpleFaTagEnd: '%',
+            stackingFaTagStart: '|',
+            stackingFaTagEnd: '|',
+        });
     },
     // Plugins configuration
     plugins: [
