@@ -104,11 +104,18 @@ export default defineUserConfig({
     extendsMarkdown: (md) => {
         md.use(MarkdownItMdc);
         md.use(MarkdownItFontawesome.plugin, {
-            ignoreStyled: false,
+            /** start tag for simple fa tags */
             simpleFaTagStart: '%',
+            /** end tag for simple fa tags */
             simpleFaTagEnd: '%',
-            stackingFaTagStart: '|',
-            stackingFaTagEnd: '|',
+            /** start tag for style */
+            styleTagStart: '(',
+            /** end tag for style */
+            styleTagEnd: ')',
+            /** start tag for stacking fa tags */
+            stackingFaTagStart: '@@',
+            /** end tag for stacking fa tags */
+            stackingFaTagEnd: '@@',
         });
     },
     // Plugins configuration
