@@ -1,0 +1,28 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        // サービス名
+        // 企業名
+        // パッケージ名
+        "vuepress",
+        "textlint",
+        "fontawesome",
+        // アイコン名称
+        // 作者
+        "Kazuyoshi",
+        "Matsumoto",
+        "kazumatu981",
+        // プロジェクト名
+        "shikake",
+        // 技術用語
+        "usecase"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "package.json",
+        ".textlintrc.json",
+        "cspell.json",
+        "docs/assets/**/*"
+    ]
+}
