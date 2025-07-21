@@ -53,11 +53,15 @@ export default defineUserConfig({
                 link: '/',
             },
             {
+                text: 'はじめに',
+                link: '/intro.html',
+            },
+            {
                 text: '世の中の仕掛けを図に表現しよう',
                 link: '/1.getting-started/',
             },
             {
-                text: 'どうやって書くの',
+                text: '文法詳細',
                 link: '/2.howto/',
                 children: [
                     {
