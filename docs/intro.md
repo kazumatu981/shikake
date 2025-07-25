@@ -53,14 +53,16 @@ color: green
 * %fa-brands fa-bluesky%(.blue-text) 変更容易
 * %fa-solid fa-users%(.blue-text) 社会適合
 
+### %fa-solid fa-eye-low-vision%(.blue-text) 不可視: かたちがみえない
 
-### 不可視: みえない
+ソフトウェアは形がみえない。
+形がみえないので、
 
-### 複雑: そもそも難しい
+### %fa-solid fa-wind%(.blue-text) 複雑: そもそも複雑
+### %fa-brands fa-bluesky%(.blue-text) 変更容易: ちょっと触っただけでとても変わってしまう
+### %fa-solid fa-users%(.blue-text) 社会適合: 周囲の変更に適合していく必要がある
 
-### 変更容易: ちょっと変更しただけで簡単に変わってしまう
-
-### 社会適合: 環境に合わせて変更する必要がある
+## むずかしさに対するアプローチ
 
 ## 本書が目指そうとしていること
 
