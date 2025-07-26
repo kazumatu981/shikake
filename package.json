@@ -1,30 +1,43 @@
 {
-  "name": "shikake",
-  "version": "1.0.0",
-  "description": "世の中の仕掛を可視化する方法を提案します",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kazumatu981/shikake.git"
-  },
-  "author": "kazumatu981",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kazumatu981/shikake/issues"
-  },
-  "homepage": "https://github.com/kazumatu981/shikake#readme",
-  "devDependencies": {
-    "@kazumatu981/markdown-it-fontawesome": "^2.1.0",
-    "@vuepress/bundler-vite": "^2.0.0-rc.23",
-    "@vuepress/plugin-register-components": "^2.0.0-rc.110",
-    "@vuepress/theme-default": "^2.0.0-rc.110",
-    "markdown-it-mdc": "^0.2.6",
-    "sass-embedded": "^1.89.2",
-    "vuepress": "^2.0.0-rc.23"
-  }
+    "name": "shikake",
+    "version": "1.0.0",
+    "description": "世の中の仕掛を可視化する方法を提案します",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kazumatu981/shikake.git"
+    },
+    "author": "kazumatu981",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kazumatu981/shikake/issues"
+    },
+    "homepage": "https://github.com/kazumatu981/shikake#readme",
+    "devDependencies": {
+        "@kazumatu981/markdown-it-fontawesome": "^2.1.0",
+        "@vuepress/bundler-vite": "^2.0.0-rc.23",
+        "@vuepress/plugin-register-components": "^2.0.0-rc.110",
+        "@vuepress/theme-default": "^2.0.0-rc.110",
+        "markdown-it-mdc": "^0.2.6",
+        "sass-embedded": "^1.89.2",
+        "textlint": "^15.2.1",
+        "@textlint-ja/textlint-rule-no-synonyms": "latest",
+        "@textlint/textlint-plugin-markdown": "latest",
+        "textlint-filter-rule-allowlist": "latest",
+        "textlint-filter-rule-comments": "latest",
+        "textlint-rule-ja-hiragana-fukushi": "latest",
+        "textlint-rule-ja-hiragana-hojodoushi": "latest",
+        "textlint-rule-ja-hiragana-keishikimeishi": "latest",
+        "textlint-rule-ja-joyo-or-jinmeiyo-kanji": "latest",
+        "textlint-rule-ja-no-orthographic-variants": "latest",
+        "textlint-rule-ja-unnatural-alphabet": "latest",
+        "textlint-rule-preset-ja-technical-writing": "latest",
+        "sudachi-synonyms-dictionary": "latest",
+        "vuepress": "^2.0.0-rc.23"
+    }
 }
