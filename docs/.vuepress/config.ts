@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
 import MarkdownItMdc from 'markdown-it-mdc';
 import MarkdownItFontawesome from '@kazumatu981/markdown-it-fontawesome';
+import MarkdownItDefList from 'markdown-it-deflist';
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { getDirname, path } from 'vuepress/utils';
 
@@ -121,6 +122,7 @@ export default defineUserConfig({
             /** end tag for stacking fa tags */
             stackingFaTagEnd: '@@',
         });
+        md.use(MarkdownItDefList);
     },
     // Plugins configuration
     plugins: [
