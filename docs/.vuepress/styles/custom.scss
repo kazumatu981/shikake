@@ -32,22 +32,16 @@
 // img スタイル
 ///////////////////////////////////////////////////////////////////////////////
 
-p {
-    text-indent: 0.75rem;
-
-    img {
-        padding: 1.5rem;
+div#content {
+    p {
+        text-indent: 0.75rem;
     }
-
-    // #region /contents/technical/naming.md
-    img[alt='適当な名前'] {
-        width: 50%;
+    ul,
+    ol,
+    dl {
+        margin-left: 2.5rem;
     }
-    // #endregion
-
-    //#region /contents/technical/spacing-and-comment.md
-    img[alt^='龍'] {
-        width: 75%;
+    ul.fa-ul {
+        margin-left: 4rem;
     }
-    //#endregion
 }

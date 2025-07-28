@@ -127,9 +127,11 @@ IT分野では、機構や考え方とその実装を区別することがあり
 より具体的には、以下のような目標を掲げます。
 
 ::container
+---
 icon: fa-solid fa-crosshairs
 title: 目標
 color: cyan
+---
 
 * 世の中の [システム]{.red-text-bold} を実現する [ソフトウェア]{.red-text-bold} の表現方法のひとつ( `Shikake` )を提案する。
 * いくつかの [システム]{.red-text-bold} を例に挙げ `Shikake` で記述することでその有用性を示す。
