@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress';
 import MarkdownItMdc from 'markdown-it-mdc';
 import MarkdownItFontawesome from '@kazumatu981/markdown-it-fontawesome';
+import MarkdownItDefList from 'markdown-it-deflist';
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import { getDirname, path } from 'vuepress/utils';
 
@@ -53,11 +54,15 @@ export default defineUserConfig({
                 link: '/',
             },
             {
+                text: 'はじめに',
+                link: '/intro.html',
+            },
+            {
                 text: '世の中の仕掛けを図に表現しよう',
                 link: '/1.getting-started/',
             },
             {
-                text: 'どうやって書くの',
+                text: '文法詳細',
                 link: '/2.howto/',
                 children: [
                     {
@@ -117,6 +122,7 @@ export default defineUserConfig({
             /** end tag for stacking fa tags */
             stackingFaTagEnd: '@@',
         });
+        md.use(MarkdownItDefList);
     },
     // Plugins configuration
     plugins: [

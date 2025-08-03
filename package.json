@@ -20,14 +20,16 @@
     "homepage": "https://github.com/kazumatu981/shikake#readme",
     "devDependencies": {
         "@kazumatu981/markdown-it-fontawesome": "^2.1.0",
+        "@textlint-ja/textlint-rule-no-synonyms": "latest",
+        "@textlint/textlint-plugin-markdown": "latest",
         "@vuepress/bundler-vite": "^2.0.0-rc.23",
         "@vuepress/plugin-register-components": "^2.0.0-rc.110",
         "@vuepress/theme-default": "^2.0.0-rc.110",
+        "markdown-it-deflist": "^3.0.0",
         "markdown-it-mdc": "^0.2.6",
         "sass-embedded": "^1.89.2",
+        "sudachi-synonyms-dictionary": "latest",
         "textlint": "^15.2.1",
-        "@textlint-ja/textlint-rule-no-synonyms": "latest",
-        "@textlint/textlint-plugin-markdown": "latest",
         "textlint-filter-rule-allowlist": "latest",
         "textlint-filter-rule-comments": "latest",
         "textlint-rule-ja-hiragana-fukushi": "latest",
@@ -37,7 +39,6 @@
         "textlint-rule-ja-no-orthographic-variants": "latest",
         "textlint-rule-ja-unnatural-alphabet": "latest",
         "textlint-rule-preset-ja-technical-writing": "latest",
-        "sudachi-synonyms-dictionary": "latest",
         "vuepress": "^2.0.0-rc.23"
     }
 }
